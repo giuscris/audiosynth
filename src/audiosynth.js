@@ -14,8 +14,16 @@ class AudioSynthInstrument {
         return this.parent.play(this.soundID, note, octave, duration);
     }
 
+    playFrequency(frequency, duration) {
+        return this.parent.playFrequency(this.soundID, frequency, duration);
+    }
+
     generate(note, octave, duration) {
         return this.parent.generate(this.soundID, note, octave, duration);
+    }
+
+    generateFrequency(frequency, duration) {
+        return this.parent.generateFrequency(this.soundID, frequency, duration);
     }
 }
 

@@ -139,9 +139,19 @@ var AudioSynth = (function () {
         return this.parent.play(this.soundID, note, octave, duration);
       }
     }, {
+      key: "playFrequency",
+      value: function playFrequency(frequency, duration) {
+        return this.parent.playFrequency(this.soundID, frequency, duration);
+      }
+    }, {
       key: "generate",
       value: function generate(note, octave, duration) {
         return this.parent.generate(this.soundID, note, octave, duration);
+      }
+    }, {
+      key: "generateFrequency",
+      value: function generateFrequency(frequency, duration) {
+        return this.parent.generateFrequency(this.soundID, frequency, duration);
       }
     }]);
 
